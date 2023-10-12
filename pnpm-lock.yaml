@@ -207,9 +207,6 @@ importers:
       '@trpc/server':
         specifier: ^10.38.5
         version: 10.38.5
-      flatted:
-        specifier: ^3.2.9
-        version: 3.2.9
       google-auth-library:
         specifier: ^9.1.0
         version: 9.1.0
