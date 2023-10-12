@@ -1,0 +1,51 @@
+
+> @tda/web@0.1.0 build /Users/shadow/Coding/rac/apps/web
+> pnpm with-env next build
+
+
+> @tda/web@0.1.0 with-env /Users/shadow/Coding/rac/apps/web
+> dotenv -e ../../.env -- "next" "build"
+
+   Creating an optimized production build ...
+Warning: For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ✓ Compiled successfully
+   Skipping validation of types
+   Skipping linting
+   Collecting page data ...
+ ⚠ Using edge runtime on a page currently disables static generation for that page
+   Generating static pages (0/11) ...
+
+   Generating static pages (2/11) 
+
+   Generating static pages (5/11) 
+
+   Generating static pages (8/11) 
+
+ ✓ Generating static pages (11/11) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ λ /                                    644 B          86.2 kB
+├ λ /_not-found                          881 B          81.4 kB
+├ λ /admin                               174 B          87.6 kB
+├ λ /admin/create/class                  11.7 kB         114 kB
+├ ℇ /api/trpc/[trpc]                     0 B                0 B
+├ λ /data                                199 B          97.3 kB
+├ λ /files/facilities-use-policy         145 B          80.6 kB
+├ λ /files/handbook                      145 B          80.6 kB
+├ λ /schedule                            1.24 kB        98.4 kB
+└ λ /welcome                             409 B          85.9 kB
++ First Load JS shared by all            80.5 kB
+  ├ chunks/1dd3208c-0971eadaf1928cf5.js  51 kB
+  ├ chunks/858-cd33e6dd70389c25.js       27.5 kB
+  ├ chunks/main-app-64276b1fd80c5a3e.js  231 B
+  └ chunks/webpack-d51237ae4d353259.js   1.79 kB
+
+
+ƒ Middleware                             187 kB
+
+ℇ  (Streaming)  server-side renders with streaming (uses React 18 SSR streaming or Server Components)
+λ  (Server)     server-side renders at runtime (uses getInitialProps or getServerSideProps)
+

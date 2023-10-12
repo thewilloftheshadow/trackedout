@@ -1,0 +1,37 @@
+{
+	"name": "@tda/store",
+	"private": true,
+	"version": "0.1.0",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"typesVersions": {
+		"*": {
+			"*": [
+				"src/*"
+			]
+		}
+	},
+	"license": "MIT",
+	"scripts": {
+		"clean": "rm -rf .turbo node_modules",
+		"lint": "eslint .",
+		"format": "prettier --check \"**/*.{mjs,ts,md,json}\"",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"simple-zustand-devtools": "^1.1.0"
+	},
+	"devDependencies": {
+		"@tda/eslint-config": "^0.2.0",
+		"@tda/prettier-config": "^0.1.0",
+		"@tda/tsconfig": "^0.1.0",
+		"zustand": "^4.4.2"
+	},
+	"eslintConfig": {
+		"extends": [
+			"@tda/eslint-config/base"
+		]
+	},
+	"prettier": "@tda/prettier-config"
+}
